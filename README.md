@@ -66,7 +66,7 @@ ai-interview-bot/
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/ai-interview-bot.git](https://github.com/Sid-istic/AI-Interview-Bot.git
+git clone https://github.com/Sid-istic/AI-Interview-Bot.git
 cd ai-interview-bot
 
 # Install dependencies
