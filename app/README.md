@@ -2,7 +2,7 @@
 
 This folder contains the core logic and configuration files for the **AI Interview Feedback Bot**, an intelligent system that simulates job interviews, generates dynamic questions based on resumes, and provides automated feedback reports.
 
-## 📂 Folder: `apps/`
+## 📂 Folder: `app/`
 
 | File | Description |
 |------|-------------|
