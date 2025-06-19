@@ -6,7 +6,7 @@ import os
 load_dotenv
 
 
-def generate_evaluation(history_file: str) -> str:
+def generate_evaluation(history_file: str,api_key) -> str:
 
     with open(history_file, 'r') as f:
         history = json.load(f)
@@ -18,7 +18,7 @@ def generate_evaluation(history_file: str) -> str:
     )
     
     # Initialize Gemini
-    genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
+    genai.configure(api_key=api_key)
     model = genai.GenerativeModel('gemini-1.5-flash')
     
     prompt = f"""
@@ -40,9 +40,9 @@ def generate_evaluation(history_file: str) -> str:
     return response.text
 
 # Modified save function that also generates evaluation
-def save_and_evaluate():
+def save_and_evaluate(api_key):
     filename = 'chat_history.json'
-    evaluation = generate_evaluation(filename)
+    evaluation = generate_evaluation(filename,api_key)
     print("\n=== AI Evaluation ===")
     print(evaluation)
     
