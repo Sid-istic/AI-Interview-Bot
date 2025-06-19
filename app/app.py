@@ -140,13 +140,13 @@ with st.sidebar:
                 st.rerun()
             if st.button("Get Analysis"):
                 evaluate = Interview_evaluation.save_and_evaluate()
-                with open("chat_history_eval.md", "r") as file:
+                with open("app/chat_history_eval.md", "r") as file:
                     content = file.read()
                 st.markdown(content)
-                with open("chat_history.json", "r+") as file:
+                with open("app/chat_history.json", "r+") as file:
                     file.truncate(0)  # Clears all content
 
-                with open("chat_history_eval.md", "r+") as file:
+                with open("app/chat_history_eval.md", "r+") as file:
                     file.truncate(0)  # Clears all content
                 if st.button("Download Analysis"):
                     st.download_button(
