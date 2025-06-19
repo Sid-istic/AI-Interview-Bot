@@ -4,7 +4,7 @@ An intelligent, voice-based mock interview system that conducts adaptive, role-s
 
 ## 🚀 Demo
 🔗 [Live Demo ](https://ai-interview-bot-sid.streamlit.app/)  
-📹 Coming soon: Demo video showcasing voice-based adaptive interviews.
+📹 [Demo Video](https://1drv.ms/v/c/6076c5e30246a584/EZSm3AHPC0BAuLjgyDycosMBkMAYVwyfuWdrV0OasUdKmQ?e=HfW8OD)
 
 ---
 
