@@ -34,8 +34,8 @@ y_list = [
 ]
 
 # Path config
-MODEL_PATH = r"app\model.pkl"
-VEC_PATH = r"app\tfidf_vectorizer.pkl"
+MODEL_PATH = r"app/model.pkl"
+VEC_PATH = r"app/tfidf_vectorizer.pkl"
 
 def preprocess_text(text):
     text = re.sub(r'[^a-zA-Z ]', ' ', text).lower()
