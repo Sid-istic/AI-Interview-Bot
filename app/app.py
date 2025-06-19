@@ -139,7 +139,7 @@ with st.sidebar:
                 ]
                 st.rerun()
             if st.button("Get Analysis"):
-                evaluate = Interview_evaluation.save_and_evaluate()
+                evaluate = Interview_evaluation.save_and_evaluate(api_key)
                 with open("app/chat_history_eval.md", "r") as file:
                     content = file.read()
                 st.markdown(content)
