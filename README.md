@@ -38,7 +38,10 @@ An intelligent, voice-based mock interview system that conducts adaptive, role-s
 ```
 
 ai-interview-bot/
-├── models                                               # ML model for role classification and tfidf classifier
+├── Models                                               # ML model for role classification and tfidf classifier
+  ├── jobrole_prediction.ipynb                           # colab file with prediction model
+  ├── model.pkl                                          # model stored in .pkl file
+  ├── tfidfvector.pkl                                    # vectorizer trained on interview dataset
 ├── app/
   ├── interviewer_personalities.json                     # Different personalities of the interviewer 
   ├── jobrole_prediction.py                              # Predicts the job role form resume
@@ -83,7 +86,7 @@ streamlit run app.py
 
 ## 🧪 Datasets Used
 
-* **Resume Classification Dataset** by Noran Mohamed — for job role prediction.
+* **Resume Classification Dataset** by Noran Mohamed — for job role prediction.(check jobrole_prediction.ipynb)
 
 ---
 
