@@ -164,8 +164,6 @@ with st.sidebar:
             st.markdown("- Simple chat/voice input")
             st.markdown("- End interview button")
             st.divider()
-            st.caption("Note: This is UI-only with no actual AI backend")
-            st.divider()
             st.markdown("""P.S. This project is still a work in progress. While the core functionality is in place, additional testing, debugging, and optimization are needed to ensure accuracy and reliability. Future improvements may include better error handling, performance optimization, and possible deployment as a web app.
                         also the prediction model is not 100% accurate as the dataset used only had 42 job roles to predict from 
                         """)
