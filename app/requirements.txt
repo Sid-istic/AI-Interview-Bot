@@ -7,7 +7,7 @@ audio-recorder-streamlit
 nltk
 PyMuPDF
 SpeechRecognition
-pickle
+
 scikit-learn
 numpy
 pandas
