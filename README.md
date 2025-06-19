@@ -38,14 +38,19 @@ An intelligent, voice-based mock interview system that conducts adaptive, role-s
 ```
 
 ai-interview-bot/
-├── resume\_classifier/        # ML model for role classification
-├── persona\_engine/           # Interviewer personality logic
-├── question\_generator/       # Transformer-based dynamic Q generation
-├── audio\_interface/          # Voice input/output modules
-├── feedback\_module/          # Response evaluation + feedback
-├── app.py                    # Streamlit app main file
-├── requirements.txt
-└── README.md
+├── models                                               # ML model for role classification and tfidf classifier
+├── app/
+  ├── interviewer_personalities.json                     # Different personalities of the interviewer 
+  ├── jobrole_prediction.py                              # Predicts the job role form resume
+  ├── requirements.txt                                   # all the dependencies required for the project
+  ├── resume_parsing.py                                  # Extracting usefull information from Resime
+  ├── stt.py                                             # Speech to Text for Answer inputs
+  ├── Interview_evaluation.py                            # Evaluates the overall interview and creates a feedback
+  ├── chat_history.json                                  # Saves chat hostory for evaluation
+  ├── chat_history_eval.md                               # Evaluated Feedback for user
+  ├── app.py                                             # main app for deployment
+         
+
 
 ```
 
