@@ -223,7 +223,7 @@ def handle_message(input_text):
     if st.session_state.chat:
         assistant_prompt = st.session_state.chat.send_message(f"Candidate response: {input_text}\n Ask an appropriate follow-up question or a new question")
         assistant_prompt = assistant_prompt.text
-        #generate_audio(assistant_prompt)
+        generate_audio(assistant_prompt)
         with st.chat_message("assistant"):
             st.write_stream(typewriter(assistant_prompt))
         st.session_state.messages.append(
